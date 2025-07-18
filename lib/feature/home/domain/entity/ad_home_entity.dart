@@ -1,4 +1,4 @@
-class AdsHomeEntity {
+class AdHomeEntity {
   final String id;
   final String title;
   final double price;
@@ -7,7 +7,7 @@ class AdsHomeEntity {
   final DateTime date;
   final String image;
 
-  const AdsHomeEntity({
+  const AdHomeEntity({
     required this.id,
     required this.title,
     required this.price,

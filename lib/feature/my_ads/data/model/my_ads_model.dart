@@ -1,44 +1,36 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:ebozor/feature/home/domain/entity/ads_home_entity.dart';
+import 'package:ebozor/feature/my_ads/domain/entity/my_ads_entity.dart';
 
-class AdsHomeModel {
+class MyAdsModel {
   final String id;
   final String title;
   final double price;
-  final String description;
-  final String contact;
   final DateTime date;
   final String image;
 
-  AdsHomeModel({
+  MyAdsModel({
     required this.id,
     required this.title,
     required this.price,
-    required this.description,
-    required this.contact,
     required this.date,
     required this.image,
   });
 
-  factory AdsHomeModel.fromJson(Map<String, dynamic> json, String id) {
-    return AdsHomeModel(
+  factory MyAdsModel.fromJson(Map<String, dynamic> json, String id) {
+    return MyAdsModel(
       id: id,
       title: json['title'] ?? '',
       price: (json['price'] ?? 0).toDouble(),
-      description: json['description'] ?? '',
-      contact: json['contact'] ?? '',
       date: (json['date'] as Timestamp).toDate(),
       image: json['image'] ?? '',
     );
   }
 
-  AdsHomeEntity toEntity() {
-    return AdsHomeEntity(
+  MyAdsEntity toMyAdsEntity() {
+    return MyAdsEntity(
       id: id,
       title: title,
       price: price,
-      description: description,
-      contact: contact,
       date: date,
       image: image,
     );

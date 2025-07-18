@@ -10,9 +10,7 @@ class SectionHeader extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: 15),
       child: Row(
-        children: [
-          MyText(title),
-        ],
+        children: [MyText(title, size: 20, fontWeight: FontWeight.w500)],
       ),
     );
   }

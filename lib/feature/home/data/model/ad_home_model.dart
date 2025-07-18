@@ -1,7 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:ebozor/feature/home/domain/entity/ads_home_entity.dart';
+import 'package:ebozor/feature/home/domain/entity/ad_home_entity.dart';
 
-class AdsHomeModel {
+class AdHomeModel {
   final String id;
   final String title;
   final double price;
@@ -10,7 +10,7 @@ class AdsHomeModel {
   final DateTime date;
   final String image;
 
-  AdsHomeModel({
+  AdHomeModel({
     required this.id,
     required this.title,
     required this.price,
@@ -20,8 +20,8 @@ class AdsHomeModel {
     required this.image,
   });
 
-  factory AdsHomeModel.fromJson(Map<String, dynamic> json, String id) {
-    return AdsHomeModel(
+  factory AdHomeModel.fromJson(Map<String, dynamic> json, String id) {
+    return AdHomeModel(
       id: id,
       title: json['title'] ?? '',
       price: (json['price'] ?? 0).toDouble(),
@@ -32,8 +32,8 @@ class AdsHomeModel {
     );
   }
 
-  AdsHomeEntity toEntity() {
-    return AdsHomeEntity(
+  AdHomeEntity toEntity() {
+    return AdHomeEntity(
       id: id,
       title: title,
       price: price,

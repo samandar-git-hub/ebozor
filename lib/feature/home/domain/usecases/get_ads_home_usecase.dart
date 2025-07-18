@@ -6,7 +6,7 @@ class GetAdsUseCase {
 
   GetAdsUseCase(this.repository);
 
-  Future<List<AdEntity>> call() {
+  Future<List<AdsHomeEntity>> call() {
     return repository.getAds();
   }
 }

@@ -28,11 +28,12 @@ class _CreateScreenState extends State<CreateScreen> {
     context.read<AdCreateBloc>().add(
       UploadAdEvent(
         ad: AdCreateEntity(
+          userId: "userId",
           title: _titleController.text,
           price: double.tryParse(_priceUzsController.text) ?? 0,
           description: _descController.text,
           contact: _phoneController.text,
-          date: DateTime.now().toIso8601String(),
+          date: DateTime.now(),
           image: "",
         ),
       ),
@@ -42,6 +43,7 @@ class _CreateScreenState extends State<CreateScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: SingleChildScrollView(
           padding: const EdgeInsets.all(15),
@@ -103,6 +105,7 @@ class _CreateScreenState extends State<CreateScreen> {
                       controller: _titleController,
                       minLines: 1,
                       maxLines: 2,
+                      maxLength: 70,
                       validator: (v) => v!.isEmpty ? "Sarlavha kiriting" : null,
                     ),
                     CustomInputField(
@@ -123,7 +126,7 @@ class _CreateScreenState extends State<CreateScreen> {
                     CustomInputField(
                       hintText: "Telefon raqam:",
                       controller: _phoneController,
-                      maxLength: 30,
+                      maxLength: 20,
                       validator: (v) =>
                           v!.isEmpty ? "Telefon raqamni kiriting" : null,
                     ),

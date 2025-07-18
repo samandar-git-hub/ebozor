@@ -1,14 +1,16 @@
 import 'package:ebozor/feature/create/domain/entity/ad_create_entity.dart';
 
 class AdCreateModel {
+  final String userId;
   final String title;
   final double price;
   final String description;
   final String contact;
-  final String date;
+  final DateTime date;
   final String image;
 
   AdCreateModel({
+    required this.userId,
     required this.title,
     required this.price,
     required this.description,
@@ -18,6 +20,7 @@ class AdCreateModel {
   });
 
   Map<String, dynamic> toJson() => {
+    'userId': userId,
     'title': title,
     'price': price,
     'description': description,
@@ -28,6 +31,7 @@ class AdCreateModel {
 
   factory AdCreateModel.fromEntity(AdCreateEntity entity) {
     return AdCreateModel(
+      userId: entity.userId,
       title: entity.title,
       price: entity.price,
       description: entity.description,
