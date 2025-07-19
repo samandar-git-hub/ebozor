@@ -1,32 +1,13 @@
 {
   "project_info": {
-    "project_number": "456173619653",
-    "project_id": "obozor-iyul11",
-    "storage_bucket": "obozor-iyul11.firebasestorage.app"
+    "project_number": "359601582995",
+    "project_id": "ebozor-iyul18",
+    "storage_bucket": "ebozor-iyul18.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:456173619653:android:0611dd227a2e0cb79ae3ac",
-        "android_client_info": {
-          "package_name": "com.ebozor.ebozor"
-        }
-      },
-      "oauth_client": [],
-      "api_key": [
-        {
-          "current_key": "AIzaSyCvjmsnyE6aYpvF2LmzD8FMdlklViEN89g"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": []
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:456173619653:android:874a22e5f2e9aea09ae3ac",
+        "mobilesdk_app_id": "1:359601582995:android:f548b205f22e491e132e66",
         "android_client_info": {
           "package_name": "uz.ebozor.ebozor"
         }
@@ -34,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCvjmsnyE6aYpvF2LmzD8FMdlklViEN89g"
+          "current_key": "AIzaSyBY0GwKhaOeC0g3eD_XDX2bLWW0bf8tjgQ"
         }
       ],
       "services": {

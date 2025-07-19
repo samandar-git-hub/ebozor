@@ -47,29 +47,29 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyAay8ZRWefiJF27xsVr1U2MjQctpzJuSU0',
-    appId: '1:456173619653:web:4b135142aa6ca25a9ae3ac',
-    messagingSenderId: '456173619653',
-    projectId: 'obozor-iyul11',
-    authDomain: 'obozor-iyul11.firebaseapp.com',
-    storageBucket: 'obozor-iyul11.firebasestorage.app',
-    measurementId: 'G-P99SCCVVRW',
+    apiKey: 'AIzaSyBeZEmbtQr7oHZyjTnChltR39XsxjgYS5s',
+    appId: '1:359601582995:web:e369489011614f98132e66',
+    messagingSenderId: '359601582995',
+    projectId: 'ebozor-iyul18',
+    authDomain: 'ebozor-iyul18.firebaseapp.com',
+    storageBucket: 'ebozor-iyul18.firebasestorage.app',
+    measurementId: 'G-TMTWLNYCBH',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCvjmsnyE6aYpvF2LmzD8FMdlklViEN89g',
-    appId: '1:456173619653:android:874a22e5f2e9aea09ae3ac',
-    messagingSenderId: '456173619653',
-    projectId: 'obozor-iyul11',
-    storageBucket: 'obozor-iyul11.firebasestorage.app',
+    apiKey: 'AIzaSyBY0GwKhaOeC0g3eD_XDX2bLWW0bf8tjgQ',
+    appId: '1:359601582995:android:f548b205f22e491e132e66',
+    messagingSenderId: '359601582995',
+    projectId: 'ebozor-iyul18',
+    storageBucket: 'ebozor-iyul18.firebasestorage.app',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDlTD_mGG03O2T-Tx8YfMsPv4tR3huAyrY',
-    appId: '1:456173619653:ios:5a67df2dbb00ef8f9ae3ac',
-    messagingSenderId: '456173619653',
-    projectId: 'obozor-iyul11',
-    storageBucket: 'obozor-iyul11.firebasestorage.app',
+    apiKey: 'AIzaSyBB2-Iu-UXGC_OoSb-cnJmmH5aNxA0ucbs',
+    appId: '1:359601582995:ios:fdcf61ab675f7f9b132e66',
+    messagingSenderId: '359601582995',
+    projectId: 'ebozor-iyul18',
+    storageBucket: 'ebozor-iyul18.firebasestorage.app',
     iosBundleId: 'uz.ebozor.ebozor',
   );
 }
